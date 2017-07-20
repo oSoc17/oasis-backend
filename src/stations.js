@@ -6,7 +6,16 @@ const checkDatabase = () => {
                 "standardname varchar(150), uri varchar(250), company varchar(250), type varchar(250));");
 };
 
+const removeQuote = (string) => {
+    return string.replace(/\'/g, "''");
+};
+
 const addStation = (name, standardname, uri, type, company) => {
+    name = removeQuote(name);
+    standardname = removeQuote(standardname);
+    uri = removeQuote(uri);
+    type = removeQuote(type);
+    company = removeQuote(company);
     db.run(`INSERT OR IGNORE INTO stations (name, standardname, uri, company, type) VALUES('${ name }', ` +
                 `'${ standardname }', '${ uri }', '${ company }', '${ type }');`);
 };
