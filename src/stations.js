@@ -2,7 +2,7 @@ const db = require('sqlite');
 const fs = require('fs');
 
 const checkDatabase = () => {
-    db.run("CREATE TABLE IF NOT EXISTS stations (uri varchar(250) PRIMARY KEY, name varchar(150), " + 
+    db.run("CREATE TABLE IF NOT EXISTS stations (id varchar(250) PRIMARY KEY, name varchar(150), " + 
                 "standardname varchar(150), company varchar(250), type varchar(250));");
 };
 
@@ -16,7 +16,7 @@ const addStation = (name, standardname, uri, type, company) => {
     uri = removeQuote(uri);
     type = removeQuote(type);
     company = removeQuote(company);
-    db.run(`INSERT OR IGNORE INTO stations (name, standardname, uri, company, type) VALUES('${ name }', ` +
+    db.run(`INSERT OR IGNORE INTO stations (name, standardname, id, company, type) VALUES('${ name }', ` +
                 `'${ standardname }', '${ uri }', '${ company }', '${ type }');`);
 };
 
