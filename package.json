@@ -1,0 +1,25 @@
+{
+  "name": "oasis-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./dist/main"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oSoc17/oasis-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oSoc17/oasis-backend/issues"
+  },
+  "homepage": "https://github.com/oSoc17/oasis-backend#readme",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "express": "^4.15.3",
+    "sqlite": "^2.8.0"
+  }
+}
