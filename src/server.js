@@ -3,6 +3,7 @@ const Promise = require('bluebird');
 const db = require('sqlite');
 
 const stations = require("./stations");
+const responseHandler = require("./responseHandler");
 
 const config = require("../config.json");
 const app = express();
@@ -11,7 +12,7 @@ const port = process.env.PORT || config.port;
 const serverStarted = () => {
     console.log("Server is up and running!")
     app.get('/', function (req, res) {
-        res.send('Unknown request!');
+        responseHandler.sendDocumentation(req, res);
     });
     stations.registerListeners(app);
 }

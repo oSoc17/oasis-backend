@@ -1,6 +1,8 @@
 const db = require('sqlite');
 const fs = require('fs');
 
+const responseHandler = require('./responseHandler');
+
 const checkDatabase = () => {
     db.run("CREATE TABLE IF NOT EXISTS stations (id varchar(250) PRIMARY KEY, name varchar(150), " + 
                 "standardname varchar(150), company varchar(250), type varchar(250));");
@@ -59,7 +61,7 @@ const importJson = (file, key, type, company) => {
     });
 }
 
-const getStation = (query) => {
+const getStationByName = (query) => {
     console.log('query: ', query);
     return new Promise((resolve, reject) => {
         db.all('SELECT * FROM stations WHERE name LIKE ? OR standardname LIKE ?', `%${query}%`, `%${query}%`)
@@ -73,6 +75,21 @@ const getStation = (query) => {
         });
     });
 };
+
+const getStationById = (id) => {
+    console.log('ID query: ', id);
+    return new Promise((resolve, reject) => {
+        db.all('SELECT * FROM stations WHERE id= ?', id)
+        .then((row) => {
+            // console.log(row);
+            resolve(row);
+        })
+        .catch((e) => {
+            // console.log(e);
+            reject(e);
+        });
+    });
+}
 
 const fillDatabase = () => {
     // CRTM
@@ -91,22 +108,30 @@ const registerListeners = (app) => {
     checkDatabase();
     fillDatabase();
     app.get('/station', function (req, res) {
-        res.setHeader('Content-Type', 'application/json');
-        res.header("Access-Control-Allow-Origin", "*");
-        if (req.query && req.query.q) {
-            const query = req.query.q;
-            if (query.length < 4) {
-                const errorMsg = {
-                    error: "Minimum query length should be 4 characters!"
-                };
-                return res.send(JSON.stringify(errorMsg));
+        if (req.query) {
+            res.setHeader('Content-Type', 'application/json');
+            res.header("Access-Control-Allow-Origin", "*");
+            if (req.query.q) {
+                const query = req.query.q;
+                if (query.length < 4) {
+                    return res.send(JSON.stringify(responseHandler.generateError("Minimum query length should be 4 characters!")));
+                }
+                getStationByName(query).then((data) => {
+                    res.send(JSON.stringify(data));
+                });
+                return;
             }
-            getStation(query).then((data) => {
-                res.send(JSON.stringify(data));
-            });
-            return;
+            if (req.query.id) {
+                const id = req.query.id;
+                getStationById(id).then((data) => {
+                    res.send(JSON.stringify(data));
+                });
+                return;
+            }
         }
-        return res.send("Return first 25 stations in database");
+        // TODO: Respond with a list of x-amount of stations
+        // return res.send("Return first 25 stations in database");
+        responseHandler.sendDocumentation(req, res);
     });
 }
 
