@@ -2,8 +2,8 @@ const db = require('sqlite');
 const fs = require('fs');
 
 const checkDatabase = () => {
-    db.run("CREATE TABLE IF NOT EXISTS stations (id INTEGER PRIMARY KEY AUTOINCREMENT, name varchar(150), " + 
-                "standardname varchar(150), uri varchar(250), company varchar(250), type varchar(250));");
+    db.run("CREATE TABLE IF NOT EXISTS stations (uri varchar(250) PRIMARY KEY, name varchar(150), " + 
+                "standardname varchar(150), company varchar(250), type varchar(250));");
 };
 
 const removeQuote = (string) => {
