@@ -55,7 +55,7 @@ const importJson = (file, key, type, company) => {
                 // console.log("Station has been added!");
             }
         }
-        console.log(stations.length);
+        console.log("Stations in dataset", file, ":", stations.length);
     });
 }
 
@@ -93,8 +93,14 @@ const registerListeners = (app) => {
     app.get('/station', function (req, res) {
         if (req.query && req.query.q) {
             const query = req.query.q;
+            if (query.length < 4) {
+                const errorMsg = {
+                    error: "Minimum query length should be 4 characters!"
+                };
+                return res.send(JSON.stringify(errorMsg));
+            }
             getStation(query).then((data) => {
-                res.send(data);
+                res.send(JSON.stringify(data));
             });
             return;
         }
