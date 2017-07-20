@@ -91,6 +91,7 @@ const registerListeners = (app) => {
     checkDatabase();
     fillDatabase();
     app.get('/station', function (req, res) {
+        res.header("Access-Control-Allow-Origin", "*");
         if (req.query && req.query.q) {
             const query = req.query.q;
             if (query.length < 4) {
