@@ -23,3 +23,10 @@ Start the server.
 ```
 $ npm start
 ```
+
+### Run the server
+After testing the server if everything is working fine, you can run the run.sh script (Make sure you set the file to runnable)
+```
+chmod +x ./run.sh
+./run.sh
+```
