@@ -1,0 +1,107 @@
+[
+    {
+        "id": "http://irail.be/stations/NMBS/008892007",
+        "name": "Ghent-sint-pieters",
+        "standardname": "Gent-sint-pieters",
+        "company": "sncb",
+        "type": "train"
+    },
+    {
+        "id": "http://irail.be/stations/NMBS/008893120",
+        "name": "Ghent-dampoort",
+        "standardname": "Gent-dampoort",
+        "company": "sncb",
+        "type": "train"
+    },
+    {
+        "id": "http://irail.be/stations/NMBS/008893179",
+        "name": "Gentbrugge",
+        "standardname": "Gentbrugge",
+        "company": "sncb",
+        "type": "train"
+    },
+    {
+        "id": "http://madrid.linkedconnections.org/crtm/stops/par_8_07119",
+        "name": "7119 - Méjico-argentina",
+        "standardname": "7119 - Méjico-argentina",
+        "company": "crtm",
+        "type": "bus"
+    },
+    {
+        "id": "http://madrid.linkedconnections.org/crtm/stops/par_8_07122",
+        "name": "7122 - Venezuela-argentina",
+        "standardname": "7122 - Venezuela-argentina",
+        "company": "crtm",
+        "type": "bus"
+    },
+    {
+        "id": "http://madrid.linkedconnections.org/crtm/stops/par_8_07162",
+        "name": "7162 - Venezuela-argentina",
+        "standardname": "7162 - Venezuela-argentina",
+        "company": "crtm",
+        "type": "bus"
+    },
+    {
+        "id": "http://madrid.linkedconnections.org/crtm/stops/par_8_07165",
+        "name": "7165 - Méjico-argentina",
+        "standardname": "7165 - Méjico-argentina",
+        "company": "crtm",
+        "type": "bus"
+    },
+    {
+        "id": "http://madrid.linkedconnections.org/crtm/stops/par_8_08309",
+        "name": "8309 - Colombia-argentina",
+        "standardname": "8309 - Colombia-argentina",
+        "company": "crtm",
+        "type": "bus"
+    },
+    {
+        "id": "http://madrid.linkedconnections.org/crtm/stops/par_8_09364",
+        "name": "9364 - Argentina-c.c.tres Aguas",
+        "standardname": "9364 - Argentina-c.c.tres Aguas",
+        "company": "crtm",
+        "type": "bus"
+    },
+    {
+        "id": "http://madrid.linkedconnections.org/crtm/stops/par_8_09373",
+        "name": "9373 - Av.bellas Artes-argentina",
+        "standardname": "9373 - Av.bellas Artes-argentina",
+        "company": "crtm",
+        "type": "bus"
+    },
+    {
+        "id": "http://madrid.linkedconnections.org/crtm/stops/par_8_15728",
+        "name": "15728 - Av.república Argentina-av.méxico",
+        "standardname": "15728 - Av.república Argentina-av.méxico",
+        "company": "crtm",
+        "type": "bus"
+    },
+    {
+        "id": "http://madrid.linkedconnections.org/crtm/stops/par_8_17421",
+        "name": "17421 - Argentina-venezuela",
+        "standardname": "17421 - Argentina-venezuela",
+        "company": "crtm",
+        "type": "bus"
+    },
+    {
+        "id": "http://madrid.linkedconnections.org/crtm/stops/par_8_17422",
+        "name": "17422 - Argentina-venezuela",
+        "standardname": "17422 - Argentina-venezuela",
+        "company": "crtm",
+        "type": "bus"
+    },
+    {
+        "id": "http://madrid.linkedconnections.org/crtm/stops/par_8_17822",
+        "name": "17822 - Pºargentina-cuba",
+        "standardname": "17822 - Pºargentina-cuba",
+        "company": "crtm",
+        "type": "bus"
+    },
+    {
+        "id": "http://madrid.linkedconnections.org/crtm/stops/par_8_4309",
+        "name": "4309 - Av.padre Huidobro-argentona",
+        "standardname": "4309 - Av.padre Huidobro-argentona",
+        "company": "crtm",
+        "type": "bus"
+    }
+]
