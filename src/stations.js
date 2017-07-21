@@ -90,50 +90,40 @@ const importJson = (file, key, type, company) => {
 
 /**
  * Returns a list of stations that contain the query
- * @param {*} query a piece or name of a stations
+ * @param {*} query a query object {id, name, company, type}
  */
-const getStationByName = (query) => {
-    console.log('query: ', query);
+const getStation = (query) => {
+    let sqlQuery = 'SELECT * FROM stations WHERE ';
+    let parameters = [];
+    if (query.id) {
+        sqlQuery += ' id= ?';
+        parameters.push(`${query.id}`);
+    }
+    if (query.name) {
+        if (parameters.length > 0) {
+            sqlQuery += ' AND'
+        }
+        sqlQuery += ' name LIKE ? OR standardname LIKE ?';
+        parameters.push(`%${query.name}%`);
+        parameters.push(`%${query.name}%`);
+    }
+    if (query.company) {
+        if (parameters.length > 0) {
+            sqlQuery += ' AND'
+        }
+        sqlQuery += ' company= ?';
+        parameters.push(`${query.company}`);
+    }
+    if (query.type) {
+        if (parameters.length > 0) {
+            sqlQuery += ' AND'
+        }
+        sqlQuery += ' type= ?';
+        parameters.push(`${query.type}`);
+    }
+    sqlQuery += ' LIMIT 50';
     return new Promise((resolve, reject) => {
-        db.all('SELECT * FROM stations WHERE name LIKE ? OR standardname LIKE ?', `%${query}%`, `%${query}%`)
-        .then((row) => {
-            // console.log(row);
-            resolve(row);
-        })
-        .catch((e) => {
-            // console.log(e);
-            reject(e);
-        });
-    });
-};
-
-/**
- * returns a station according to it's unique identifier (uri)
- * @param {*} id a stations id/uri
- */
-const getStationById = (id) => {
-    console.log('ID query: ', id);
-    return new Promise((resolve, reject) => {
-        db.all('SELECT * FROM stations WHERE id= ?', id)
-        .then((row) => {
-            // console.log(row);
-            resolve(row);
-        })
-        .catch((e) => {
-            // console.log(e);
-            reject(e);
-        });
-    });
-}
-
-/**
- * returns a station according to it's company
- * @param {*} company a company name
- */
-const getStationByCompany = (company) => {
-    console.log('Company query: ', company);
-    return new Promise((resolve, reject) => {
-        db.all('SELECT * FROM stations WHERE company= ?', company)
+        db.all(sqlQuery, parameters)
         .then((row) => {
             // console.log(row);
             resolve(row);
@@ -172,34 +162,38 @@ const registerListeners = (app) => {
         if (req.query) {
             res.setHeader('Content-Type', 'application/json');
             res.header("Access-Control-Allow-Origin", "*");
+            let searchQuery = {};
+            let valueSet = false;
             if (req.query.q) {
-                const query = req.query.q;
-                if (query.length < 4) {
+                if (req.query.q.length < 4) {
                     return res.send(JSON.stringify(responseHandler.generateError("Minimum query length should be 4 characters!")));
                 }
-                getStationByName(query).then((data) => {
-                    res.send(JSON.stringify(data));
-                });
-                return;
+                searchQuery["name"] = `${req.query.q}`;
+                valueSet = true;
             }
             if (req.query.id) {
-                const id = req.query.id;
-                getStationById(id).then((data) => {
-                    res.send(JSON.stringify(data));
-                });
-                return;
+                searchQuery["id"] = `${req.query.id}`;
+                valueSet = true;
             }
             if (req.query.company) {
-                const company = req.query.company;
-                getStationByCompany(company).then((data) => {
+                searchQuery["company"] = `${req.query.company}`;
+                valueSet = true;
+            }
+            if (req.query.type) {
+                searchQuery["type"] = `${req.query.type}`;
+                valueSet = true;
+            }
+            if (searchQuery && valueSet) {
+                return getStation(searchQuery)
+                .then((data) => {
                     res.send(JSON.stringify(data));
-                });
-                return;
+                })
+                .catch(e => JSON.stringify(responseHandler.generateError("No data found.")));
             }
         }
         // TODO: Respond with a list of x-amount of stations
         // return res.send("Return first 25 stations in database");
-        responseHandler.sendDocumentation(req, res);
+        return responseHandler.sendDocumentation(req, res);
     });
 }
 
