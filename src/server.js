@@ -9,6 +9,9 @@ const config = require("../config.json");
 const app = express();
 const port = process.env.PORT || config.port;
 
+/**
+ * Logs that the server started and starts up all listeners, services and db fillers
+ */
 const serverStarted = () => {
     console.log("Server is up and running!")
     app.get('/', function (req, res) {
@@ -17,6 +20,9 @@ const serverStarted = () => {
     stations.registerListeners(app);
 }
 
+/**
+ * Checks and Registers all databases and creates files in case necessary
+ */
 const startDb = () => {
     return new Promise(function (resolve, reject) {
         db.open('./databases/stations.sqlite')
@@ -30,10 +36,16 @@ const startDb = () => {
     });
 };
 
+/**
+ * Starts the express instance after initial loadig of services and databases
+ */
 const startServer = () => {
     app.listen(port, serverStarted);
 }
 
+/**
+ * Initialises the server
+ */
 const initialize = () => {
     startDb().then(() => {
         startServer();

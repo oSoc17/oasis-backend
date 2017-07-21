@@ -1,6 +1,11 @@
 const Promise = require('bluebird');
 const fs = require('fs');
 
+/**
+ * Generates an custom error object
+ * @param {*} message The error message
+ * @param {*} code The error code
+ */
 const generateError = (message, code) => {
     return {
         code: code,
@@ -8,6 +13,11 @@ const generateError = (message, code) => {
     }
 }
 
+/**
+ * Sends the documentation to the client
+ * @param {*} req express request object
+ * @param {*} res express result object
+ */
 const sendDocumentation = (req, res) => {
     res.setHeader('Content-Type', 'text/html');
     getDocumentation()
@@ -17,6 +27,9 @@ const sendDocumentation = (req, res) => {
     .catch(e => res.send(JSON.stringify(e)));
 }
 
+/**
+ * Fetches the documentation from the storage
+ */
 const getDocumentation = () => {
     return new Promise((resolve, reject) => {
         fs.readFile("documentation/index.html", (err, data) => {
