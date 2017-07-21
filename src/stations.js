@@ -127,6 +127,25 @@ const getStationById = (id) => {
 }
 
 /**
+ * returns a station according to it's company
+ * @param {*} company a company name
+ */
+const getStationByCompany = (company) => {
+    console.log('Company query: ', company);
+    return new Promise((resolve, reject) => {
+        db.all('SELECT * FROM stations WHERE company= ?', company)
+        .then((row) => {
+            // console.log(row);
+            resolve(row);
+        })
+        .catch((e) => {
+            // console.log(e);
+            reject(e);
+        });
+    });
+}
+
+/**
  * Fills the database up with data from the provided json files
  * Also checks if data is still in the database
  */
@@ -166,6 +185,13 @@ const registerListeners = (app) => {
             if (req.query.id) {
                 const id = req.query.id;
                 getStationById(id).then((data) => {
+                    res.send(JSON.stringify(data));
+                });
+                return;
+            }
+            if (req.query.company) {
+                const company = req.query.company;
+                getStationByCompany(company).then((data) => {
                     res.send(JSON.stringify(data));
                 });
                 return;
