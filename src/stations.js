@@ -130,15 +130,18 @@ const getStation = (query) => {
     }
     sqlQuery += ' LIMIT 25';
     if (query.page && !isNaN(query.page)) {
-        nextPage += parameters.length > 0 ? '&' : '?';
-        nextPage += `p=${(parseInt(query.page) + 1)}`;
+        query.page = parseInt(query.page)
         sqlQuery += ` OFFSET ${query.page}`;
+    } else {
+        query.page = 0;
     }
     return new Promise((resolve, reject) => {
         db.all(sqlQuery, parameters)
         .then((row) => {
             // console.log(row);
             if (row.length >= 25) {
+                nextPage += parameters.length > 0 ? '&' : '?';
+                nextPage += `p=${(query.page + 1)}`;
                 response.nextPage = nextPage;
             }
             response.stations = row;
