@@ -2,6 +2,7 @@ const db = require('sqlite');
 const fs = require('fs');
 
 const responseHandler = require('./responseHandler');
+const config = require('../config.json');
 
 /**
  * Checks if the table exists and adds in case it doesn't
@@ -93,40 +94,55 @@ const importJson = (file, key, type, company) => {
  * @param {*} query a query object {id, name, company, type}
  */
 const getStation = (query) => {
-    let sqlQuery = 'SELECT * FROM stations WHERE ';
+    let sqlQuery = 'SELECT * FROM stations ';
     let parameters = [];
+    let nextPage = `${config.domain}/station`;
+    let response = {};
+    if (query.id || query.name || query.company || query.type) {
+        sqlQuery = 'SELECT * FROM stations WHERE ';
+    }
     if (query.id) {
+        nextPage += `?id=${query.id}`;
         sqlQuery += ' id= ?';
         parameters.push(`${query.id}`);
     }
     if (query.name) {
-        if (parameters.length > 0) {
-            sqlQuery += ' AND'
-        }
+        nextPage += parameters.length > 0 ? '&' : '?';
+        nextPage += `q=${query.name}`;
+        sqlQuery += parameters.length > 0 ? ' AND' : "";
         sqlQuery += ' name LIKE ? OR standardname LIKE ?';
         parameters.push(`%${query.name}%`);
         parameters.push(`%${query.name}%`);
     }
     if (query.company) {
-        if (parameters.length > 0) {
-            sqlQuery += ' AND'
-        }
+        nextPage += parameters.length > 0 ? '&' : '?';
+        nextPage += `company=${query.company}`;
+        sqlQuery += parameters.length > 0 ? ' AND' : "";
         sqlQuery += ' company= ?';
         parameters.push(`${query.company}`);
     }
     if (query.type) {
-        if (parameters.length > 0) {
-            sqlQuery += ' AND'
-        }
+        nextPage += parameters.length > 0 ? '&' : '?';
+        nextPage += `type=${query.type}`;
+        sqlQuery += parameters.length > 0 ? ' AND' : "";
         sqlQuery += ' type= ?';
         parameters.push(`${query.type}`);
     }
-    sqlQuery += ' LIMIT 50';
+    sqlQuery += ' LIMIT 25';
+    if (query.page && !isNaN(query.page)) {
+        nextPage += parameters.length > 0 ? '&' : '?';
+        nextPage += `p=${(parseInt(query.page) + 1)}`;
+        sqlQuery += ` OFFSET ${query.page}`;
+    }
     return new Promise((resolve, reject) => {
         db.all(sqlQuery, parameters)
         .then((row) => {
             // console.log(row);
-            resolve(row);
+            if (row.length >= 25) {
+                response.nextPage = nextPage;
+            }
+            response.stations = row;
+            resolve(response);
         })
         .catch((e) => {
             // console.log(e);
@@ -165,9 +181,6 @@ const registerListeners = (app) => {
             let searchQuery = {};
             let valueSet = false;
             if (req.query.q) {
-                if (req.query.q.length < 4) {
-                    return res.send(JSON.stringify(responseHandler.generateError("Minimum query length should be 4 characters!")));
-                }
                 searchQuery["name"] = `${req.query.q}`;
                 valueSet = true;
             }
@@ -183,17 +196,16 @@ const registerListeners = (app) => {
                 searchQuery["type"] = `${req.query.type}`;
                 valueSet = true;
             }
-            if (searchQuery && valueSet) {
-                return getStation(searchQuery)
-                .then((data) => {
-                    res.send(JSON.stringify(data));
-                })
-                .catch(e => JSON.stringify(responseHandler.generateError("No data found.")));
+            if (req.query.p) {
+                searchQuery["page"] = `${req.query.p}`;
+                valueSet = true;
             }
+            return getStation(searchQuery)
+            .then((data) => {
+                res.send(JSON.stringify(data));
+            })
+            .catch(e => JSON.stringify(responseHandler.generateError("No data found.")));
         }
-        // TODO: Respond with a list of x-amount of stations
-        // return res.send("Return first 25 stations in database");
-        return responseHandler.sendDocumentation(req, res);
     });
 }
 
