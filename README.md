@@ -26,6 +26,7 @@ $ npm start
 
 ### Run the server
 After testing the server if everything is working fine, you can run the run.sh script (Make sure you set the file permissions to runnable)
+
 *We do not recommend you running this server standalone without a proxy like nginx in front of it. We also recommend PM2 for uptime and multiple node server apps management.*
 ```
 chmod +x ./run.sh
