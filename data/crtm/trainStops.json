@@ -1,0 +1,442 @@
+[
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_99",
+   "standardname": "99 - SEGOVIA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_98",
+   "standardname": "98 - ARCOS DE JALON"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_97",
+   "standardname": "97 - AVILA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_96",
+   "standardname": "96 - ZORRERAS, LAS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_95",
+   "standardname": "95 - ZARZAQUEMADA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_94",
+   "standardname": "94 - ZARZALEJO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_93",
+   "standardname": "93 - VILLAVERDE BAJO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_92",
+   "standardname": "92 - VILLAVERDE ALTO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_91",
+   "standardname": "91 - VILLALBA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_90",
+   "standardname": "90 - VICALVARO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_9",
+   "standardname": "9 - ARAVACA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_87",
+   "standardname": "87 - VALLECAS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_86",
+   "standardname": "86 - VALDEMORO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_85",
+   "standardname": "85 - VALDELASFUENTES"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_84",
+   "standardname": "84 - UNIVERSIDAD P. COMILLAS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_83",
+   "standardname": "83 - TRES CANTOS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_82",
+   "standardname": "82 - TORRELODONES"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_81",
+   "standardname": "81 - TORREJON DE ARDOZ"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_8",
+   "standardname": "8 - ARANJUEZ"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_77",
+   "standardname": "77 - SERNA, LA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_76",
+   "standardname": "76 - SANTA MARIA DE LA ALAMEDA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_75",
+   "standardname": "75 - SANTA EUGENIA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_74",
+   "standardname": "74 - SAN YAGO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_72",
+   "standardname": "72 - SAN JOSE DE VALDERAS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_71",
+   "standardname": "71 - SAN FERNANDO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_70",
+   "standardname": "70 - SAN CRISTOBAL INDUSTRIAL"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_7",
+   "standardname": "7 - ALUCHE"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_69",
+   "standardname": "69 - SAN CRISTOBAL DE LOS ANGELES"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_68",
+   "standardname": "68 - ROZAS, LAS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_67",
+   "standardname": "67 - ROBLEDO DE CHAVELA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_66",
+   "standardname": "66 - RETAMAS, LAS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_65",
+   "standardname": "65 - RECOLETOS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_64",
+   "standardname": "64 - RAMON Y CAJAL"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_63",
+   "standardname": "63 - PUERTO NAVACERRADA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_62",
+   "standardname": "62 - PUENTE ALCOCER"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_61",
+   "standardname": "61 - PRINCIPE PIO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_60",
+   "standardname": "60 - POZUELO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_6",
+   "standardname": "6 - ALPEDRETE"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_59",
+   "standardname": "59 - POZO, EL"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_58",
+   "standardname": "58 - PITIS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_57",
+   "standardname": "57 - PIRAMIDES"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_56",
+   "standardname": "56 - PINTO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_55",
+   "standardname": "55 - PINAR DE LAS ROZAS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_53",
+   "standardname": "53 - PARLA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_52",
+   "standardname": "52 - ORCASITAS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_51",
+   "standardname": "51 - NUEVOS MINISTERIOS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_50",
+   "standardname": "50 - NEGRALES, LOS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_5",
+   "standardname": "5 - ALCORCON"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_49",
+   "standardname": "49 - MOSTOLES EL SOTO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_48",
+   "standardname": "48 - MOSTOLES"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_47",
+   "standardname": "47 - MOLINOS, LOS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_46",
+   "standardname": "46 - MENDEZ ALVARO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_45",
+   "standardname": "45 - MECO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_44",
+   "standardname": "44 - MATAS, LAS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_43",
+   "standardname": "43 - MARGARITAS-UNIVERSIDAD, LAS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_42",
+   "standardname": "42 - MAJADAHONDA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_41",
+   "standardname": "41 - LEGANES"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_40",
+   "standardname": "40 - LAGUNA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_4",
+   "standardname": "4 - ALCOBENDAS-S.S. DE LOS REYES"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_38",
+   "standardname": "38 - GUADALAJARA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_37",
+   "standardname": "37 - GOLOSO, EL"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_36",
+   "standardname": "36 - GETAFE SECTOR 3"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_35",
+   "standardname": "35 - GETAFE INDUSTRIAL"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_34",
+   "standardname": "34 - GETAFE CENTRO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_33",
+   "standardname": "33 - GALAPAGAR-LA NAVATA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_32",
+   "standardname": "32 - FUENLABRADA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_31",
+   "standardname": "31 - FUENCARRAL"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_30",
+   "standardname": "30 - FANJUL"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_3",
+   "standardname": "3 - ALCALÁ DE HENARES UNIVERSIDAD"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_29",
+   "standardname": "29 - ESCORIAL, EL"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_28",
+   "standardname": "28 - EMBAJADORES"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_26",
+   "standardname": "26 - DOCE DE OCTUBRE"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_25",
+   "standardname": "25 - DELICIAS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_24",
+   "standardname": "24 - CUATRO VIENTOS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_23",
+   "standardname": "23 - COTOS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_22",
+   "standardname": "22 - COSLADA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_21",
+   "standardname": "21 - COLMENAR VIEJO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_20",
+   "standardname": "20 - COLLADO MEDIANO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_2",
+   "standardname": "2 - ALCALÁ DE HENARES"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_19",
+   "standardname": "19 - CIEMPOZUELOS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_18",
+   "standardname": "18 - CHAMARTIN"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_16",
+   "standardname": "16 - CERCEDILLA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_15",
+   "standardname": "15 - CANTOBLANCO UNIVERSIDAD"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_144",
+   "standardname": "144 - VALDEBEBAS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_143",
+   "standardname": "143 - SOTO DEL HENARES"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_142",
+   "standardname": "142 - AEROPUERTO T4"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_133",
+   "standardname": "133 - FUENTE DE LA MORA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_13",
+   "standardname": "13 - BARRIAL-C.COM.POZUELO, EL"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_122",
+   "standardname": "122 - SOL"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_121",
+   "standardname": "121 - MEDINA DEL CAMPO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_120",
+   "standardname": "120 - GUIMORCONDO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_12",
+   "standardname": "12 - AZUQUECA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_119",
+   "standardname": "119 - HERRADON-LA CANADA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_118",
+   "standardname": "118 - NAVALPERAL"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_117",
+   "standardname": "117 - NAVAS DEL MARQUES, LAS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_116",
+   "standardname": "116 - AREVALO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_115",
+   "standardname": "115 - LOSA-NAVAS DE RIOFRIO, LA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_114",
+   "standardname": "114 - OTERO-HERREROS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_113",
+   "standardname": "113 - ESPINAR, EL"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_112",
+   "standardname": "112 - ARIZA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_111",
+   "standardname": "111 - VALLADOLID"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_11",
+   "standardname": "11 - ATOCHA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_106",
+   "standardname": "106 - GARENA, LA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_105",
+   "standardname": "105 - PARQUE POLVORANCA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_104",
+   "standardname": "104 - HUMANES"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_103",
+   "standardname": "103 - CASAR, EL"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_101",
+   "standardname": "101 - TOLEDO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_100",
+   "standardname": "100 - SIGÜENZA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_10",
+   "standardname": "10 - ASAMBLEA DE MADRID-ENTREVIAS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_5_1",
+   "standardname": "1 - AGUILAS, LAS"
+ }
+]

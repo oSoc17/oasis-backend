@@ -1,0 +1,230 @@
+[
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_50",
+   "standardname": "50 - PLAZA DE TOROS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_56",
+   "standardname": "56 - REYES CATOLICOS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_3",
+   "standardname": "3 - VIRGEN DEL CORTIJO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_32",
+   "standardname": "32 - CANTABRIA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_36",
+   "standardname": "36 - SIGLO XXI"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_26",
+   "standardname": "26 - JOSE ISBERT"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_12",
+   "standardname": "12 - COLONIA DE LOS ANGELES"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_21",
+   "standardname": "21 - AVENIDA DE EUROPA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_60",
+   "standardname": "60 - TIERRA NORTE"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_63",
+   "standardname": "63 - VENUS SUR"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_67",
+   "standardname": "67 - JAIME I SUR"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_7",
+   "standardname": "7 - MARIA TUDOR"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_9",
+   "standardname": "9 - LAS TABLAS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_10",
+   "standardname": "10 - COLONIA JARDIN"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_14",
+   "standardname": "14 - SOMOSAGUAS SUR"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_59",
+   "standardname": "59 - AVENIDA SISTEMA SOLAR"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_61",
+   "standardname": "61 - TIERRA SUR"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_62",
+   "standardname": "62 - VENUS NORTE"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_39",
+   "standardname": "39 - COCHERAS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_65",
+   "standardname": "65 - ESTRELLA POLAR SUR"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_64",
+   "standardname": "64 - ESTRELLA POLAR NORTE"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_66",
+   "standardname": "66 - JAIME I NORTE"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_68",
+   "standardname": "68 - POLIGONO INDUSTRIAL CIUDAD DE PARLA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_11",
+   "standardname": "11 - PRADO DE LA VEGA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_29",
+   "standardname": "29 - MONTEPRINCIPE"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_30",
+   "standardname": "30 - VENTORRO DEL CANO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_31",
+   "standardname": "31 - PRADO DEL ESPINO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_33",
+   "standardname": "33 - FERIAL DE BOADILLA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_34",
+   "standardname": "34 - BOADILLA CENTRO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_35",
+   "standardname": "35 - NUEVO MUNDO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_37",
+   "standardname": "37 - INFANTE DON LUIS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_38",
+   "standardname": "38 - PUERTA DE BOADILLA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_52",
+   "standardname": "52 - LA BALLENA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_25",
+   "standardname": "25 - CIUDAD DE LA IMAGEN"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_27",
+   "standardname": "27 - CIUDAD DEL CINE"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_28",
+   "standardname": "28 - RETAMARES"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_6",
+   "standardname": "6 - BLASCO IBAÑEZ"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_8",
+   "standardname": "8 - PALAS DE REY"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_13",
+   "standardname": "13 - PRADO DEL REY"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_15",
+   "standardname": "15 - SOMOSAGUAS CENTRO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_16",
+   "standardname": "16 - POZUELO OESTE"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_18",
+   "standardname": "18 - BELGICA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_19",
+   "standardname": "19 - DOS CASTILLAS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_20",
+   "standardname": "20 - CAMPUS DE SOMOSAGUAS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_22",
+   "standardname": "22 - BERNA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_51",
+   "standardname": "51 - JULIO ROMERO DE TORRES"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_54",
+   "standardname": "54 - IGLESIA CENTRO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_55",
+   "standardname": "55 - BULEVAR SUR"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_57",
+   "standardname": "57 - ISABEL II"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_58",
+   "standardname": "58 - PARQUE PARLA ESTE"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_4",
+   "standardname": "4 - ANTONIO SAURA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_5",
+   "standardname": "5 - ALVAREZ DE VILLAAMIL"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_23",
+   "standardname": "23 - ESTACION DE ARAVACA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_53",
+   "standardname": "53 - PARLA CENTRO - BULEVAR NORTE"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_24",
+   "standardname": "24 - COLONIA JARDIN"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_2",
+   "standardname": "2 - FUENTE DE LA MORA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_10_1",
+   "standardname": "1 - PINAR DE CHAMARTIN"
+ }
+]

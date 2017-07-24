@@ -1,0 +1,1158 @@
+[
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_99",
+   "standardname": "99 - EUGENIA DE MONTIJO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_98",
+   "standardname": "98 - CARABANCHEL"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_97",
+   "standardname": "97 - VISTA ALEGRE"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_96",
+   "standardname": "96 - OPORTO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_95",
+   "standardname": "95 - URGEL"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_94",
+   "standardname": "94 - MARQUES DE VADILLO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_93",
+   "standardname": "93 - PIRAMIDES"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_92",
+   "standardname": "92 - ACACIAS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_91",
+   "standardname": "91 - PUERTA DE TOLEDO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_90",
+   "standardname": "90 - LA LATINA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_9",
+   "standardname": "9 - BILBAO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_89",
+   "standardname": "89 - OPERA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_88",
+   "standardname": "88 - CALLAO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_87",
+   "standardname": "87 - GRAN VIA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_86",
+   "standardname": "86 - CHUECA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_85",
+   "standardname": "85 - ALONSO MARTINEZ"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_84",
+   "standardname": "84 - RUBEN DARIO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_83",
+   "standardname": "83 - NUÑEZ DE BALBOA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_82",
+   "standardname": "82 - DIEGO DE LEON"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_81",
+   "standardname": "81 - VENTAS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_80",
+   "standardname": "80 - EL CARMEN"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_8",
+   "standardname": "8 - IGLESIA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_79",
+   "standardname": "79 - QUINTANA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_78",
+   "standardname": "78 - PUEBLO NUEVO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_77",
+   "standardname": "77 - CIUDAD LINEAL"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_76",
+   "standardname": "76 - SUANZES"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_75",
+   "standardname": "75 - TORRE ARIAS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_74",
+   "standardname": "74 - CANILLEJAS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_73",
+   "standardname": "73 - PARQUE DE SANTA MARIA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_72",
+   "standardname": "72 - SAN LORENZO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_71",
+   "standardname": "71 - MAR DE CRISTAL"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_70",
+   "standardname": "70 - CANILLAS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_7",
+   "standardname": "7 - RIOS ROSAS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_69",
+   "standardname": "69 - ESPERANZA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_68",
+   "standardname": "68 - ARTURO SORIA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_67",
+   "standardname": "67 - AVENIDA DE LA PAZ"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_66",
+   "standardname": "66 - ALFONSO XIII"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_65",
+   "standardname": "65 - PROSPERIDAD"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_64",
+   "standardname": "64 - AVENIDA DE AMERICA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_63",
+   "standardname": "63 - DIEGO DE LEON"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_62",
+   "standardname": "62 - LISTA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_61",
+   "standardname": "61 - GOYA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_60",
+   "standardname": "60 - VELAZQUEZ"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_6",
+   "standardname": "6 - CUATRO CAMINOS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_59",
+   "standardname": "59 - SERRANO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_58",
+   "standardname": "58 - COLON"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_57",
+   "standardname": "57 - ALONSO MARTINEZ"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_56",
+   "standardname": "56 - BILBAO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_55",
+   "standardname": "55 - SAN BERNARDO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_54",
+   "standardname": "54 - ARGÜELLES"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_53",
+   "standardname": "53 - MONCLOA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_52",
+   "standardname": "52 - ARGÜELLES"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_51",
+   "standardname": "51 - VENTURA RODRIGUEZ"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_50",
+   "standardname": "50 - PLAZA DE ESPAÑA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_5",
+   "standardname": "5 - ALVARADO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_49",
+   "standardname": "49 - CALLAO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_48",
+   "standardname": "48 - SOL"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_47",
+   "standardname": "47 - LAVAPIES"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_46",
+   "standardname": "46 - EMBAJADORES"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_45",
+   "standardname": "45 - PALOS DE LA FRONTERA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_44",
+   "standardname": "44 - DELICIAS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_43",
+   "standardname": "43 - LEGAZPI"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_42",
+   "standardname": "42 - CUATRO CAMINOS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_41",
+   "standardname": "41 - CANAL"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_40",
+   "standardname": "40 - QUEVEDO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_4",
+   "standardname": "4 - ESTRECHO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_39",
+   "standardname": "39 - SAN BERNARDO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_38",
+   "standardname": "38 - NOVICIADO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_37",
+   "standardname": "37 - SANTO DOMINGO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_36",
+   "standardname": "36 - OPERA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_35",
+   "standardname": "35 - SOL"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_345",
+   "standardname": "345 - PACO DE LUCIA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_34",
+   "standardname": "34 - SEVILLA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_33",
+   "standardname": "33 - BANCO DE ESPAÑA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_326",
+   "standardname": "326 - MIRASIERRA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_325",
+   "standardname": "325 - LAS ROSAS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_324",
+   "standardname": "324 - AVENIDA DE GUADALAJARA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_323",
+   "standardname": "323 - ALSACIA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_322",
+   "standardname": "322 - LA ALMUDENA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_32",
+   "standardname": "32 - RETIRO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_31",
+   "standardname": "31 - PRINCIPE DE VERGARA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_305",
+   "standardname": "305 - LA FORTUNA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_300",
+   "standardname": "300 - RIVAS FUTURA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_30",
+   "standardname": "30 - GOYA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_3",
+   "standardname": "3 - TETUAN"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_296",
+   "standardname": "296 - HOSPITAL DEL HENARES"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_295",
+   "standardname": "295 - VALDECARROS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_294",
+   "standardname": "294 - LAS SUERTES"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_293",
+   "standardname": "293 - LA GAVIA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_292",
+   "standardname": "292 - HENARES"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_291",
+   "standardname": "291 - JARAMA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_290",
+   "standardname": "290 - SAN FERNANDO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_29",
+   "standardname": "29 - MANUEL BECERRA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_289",
+   "standardname": "289 - LA RAMBLA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_288",
+   "standardname": "288 - COSLADA CENTRAL"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_287",
+   "standardname": "287 - BARRIO DEL PUERTO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_286",
+   "standardname": "286 - ESTADIO OLIMPICO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_285",
+   "standardname": "285 - AEROPUERTO T4"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_284",
+   "standardname": "284 - HOSPITAL INFANTA SOFIA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_283",
+   "standardname": "283 - REYES CATOLICOS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_282",
+   "standardname": "282 - BAUNATAL"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_281",
+   "standardname": "281 - MANUEL DE FALLA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_280",
+   "standardname": "280 - MARQUES DE LA VALDAVIA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_28",
+   "standardname": "28 - VENTAS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_279",
+   "standardname": "279 - LA MORALEJA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_278",
+   "standardname": "278 - LA GRANJA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_277",
+   "standardname": "277 - RONDA DE LA COMUNICACION"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_276",
+   "standardname": "276 - LAS TABLAS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_275",
+   "standardname": "275 - MONTECARMELO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_274",
+   "standardname": "274 - TRES OLIVOS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_273",
+   "standardname": "273 - VILLAVERDE ALTO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_272",
+   "standardname": "272 - SAN CRISTOBAL"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_271",
+   "standardname": "271 - VILLAVERDE BAJO CRUCE"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_270",
+   "standardname": "270 - CIUDAD DE LOS ANGELES"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_27",
+   "standardname": "27 - CONGOSTO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_269",
+   "standardname": "269 - SAN FERMIN-ORCASUR"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_268",
+   "standardname": "268 - HOSPITAL 12 DE OCTUBRE"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_267",
+   "standardname": "267 - ALMENDRALES"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_266",
+   "standardname": "266 - PINAR DE CHAMARTIN"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_265",
+   "standardname": "265 - MANOTERAS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_264",
+   "standardname": "264 - HORTALEZA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_263",
+   "standardname": "263 - PINAR DE CHAMARTIN"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_262",
+   "standardname": "262 - BAMBU"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_261",
+   "standardname": "261 - CHAMARTIN"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_260",
+   "standardname": "260 - LA ELIPA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_26",
+   "standardname": "26 - VILLA DE VALLECAS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_259",
+   "standardname": "259 - ARGANZUELA-PLANETARIO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_258",
+   "standardname": "258 - PINAR DEL REY"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_257",
+   "standardname": "257 - AVIACION ESPAÑOLA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_256",
+   "standardname": "256 - LA PESETA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_255",
+   "standardname": "255 - CARABANCHEL ALTO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_254",
+   "standardname": "254 - SAN FRANCISCO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_253",
+   "standardname": "253 - EL CAPRICHO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_252",
+   "standardname": "252 - ALAMEDA DE OSUNA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_25",
+   "standardname": "25 - SIERRA DE GUADALUPE"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_24",
+   "standardname": "24 - MIGUEL HERNANDEZ"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_238",
+   "standardname": "238 - PRINCIPE PIO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_237",
+   "standardname": "237 - OPERA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_236",
+   "standardname": "236 - SAN NICASIO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_235",
+   "standardname": "235 - LEGANES CENTRAL"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_234",
+   "standardname": "234 - HOSPITAL SEVERO OCHOA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_233",
+   "standardname": "233 - CASA DEL RELOJ"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_232",
+   "standardname": "232 - JULIAN BESTEIRO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_231",
+   "standardname": "231 - EL CARRASCAL"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_230",
+   "standardname": "230 - EL BERCIAL"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_23",
+   "standardname": "23 - ALTO DEL ARENAL"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_229",
+   "standardname": "229 - LOS ESPARTALES"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_228",
+   "standardname": "228 - EL CASAR"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_227",
+   "standardname": "227 - JUAN DE LA CIERVA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_226",
+   "standardname": "226 - GETAFE CENTRAL"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_225",
+   "standardname": "225 - ALONSO DE MENDOZA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_224",
+   "standardname": "224 - CONSERVATORIO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_223",
+   "standardname": "223 - ARROYO CULEBRO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_222",
+   "standardname": "222 - PARQUE DE LOS ESTADOS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_221",
+   "standardname": "221 - FUENLABRADA CENTRAL"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_220",
+   "standardname": "220 - PARQUE EUROPA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_22",
+   "standardname": "22 - BUENOS AIRES"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_219",
+   "standardname": "219 - HOSPITAL DE FUENLABRADA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_218",
+   "standardname": "218 - LORANCA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_217",
+   "standardname": "217 - MANUELA MALASAÑA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_216",
+   "standardname": "216 - HOSPITAL DE MOSTOLES"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_215",
+   "standardname": "215 - PRADILLO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_214",
+   "standardname": "214 - MOSTOLES CENTRAL"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_213",
+   "standardname": "213 - UNIVERSIDAD REY JUAN CARLOS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_212",
+   "standardname": "212 - PARQUE OESTE"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_211",
+   "standardname": "211 - ALCORCON CENTRAL"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_210",
+   "standardname": "210 - PARQUE LISBOA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_21",
+   "standardname": "21 - PORTAZGO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_209",
+   "standardname": "209 - PUERTA DEL SUR"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_208",
+   "standardname": "208 - PAN BENDITO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_207",
+   "standardname": "207 - ABRANTES"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_206",
+   "standardname": "206 - PLAZA ELIPTICA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_205",
+   "standardname": "205 - PUERTA DEL SUR"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_204",
+   "standardname": "204 - JOAQUIN VILUMBRALES"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_203",
+   "standardname": "203 - CUATRO VIENTOS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_202",
+   "standardname": "202 - COLONIA JARDIN"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_201",
+   "standardname": "201 - CASA DE CAMPO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_200",
+   "standardname": "200 - BATAN"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_20",
+   "standardname": "20 - NUEVA NUMANCIA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_2",
+   "standardname": "2 - VALDEACEDERAS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_199",
+   "standardname": "199 - LAGO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_198",
+   "standardname": "198 - PRINCIPE PIO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_197",
+   "standardname": "197 - PLAZA DE ESPAÑA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_196",
+   "standardname": "196 - TRIBUNAL"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_195",
+   "standardname": "195 - ALONSO MARTINEZ"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_194",
+   "standardname": "194 - GREGORIO MARAÑON"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_193",
+   "standardname": "193 - NUEVOS MINISTERIOS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_192",
+   "standardname": "192 - SANTIAGO BERNABEU"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_191",
+   "standardname": "191 - CUZCO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_190",
+   "standardname": "190 - PLAZA DE CASTILLA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_19",
+   "standardname": "19 - PUENTE DE VALLECAS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_189",
+   "standardname": "189 - CHAMARTIN"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_188",
+   "standardname": "188 - BEGOÑA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_187",
+   "standardname": "187 - FUENCARRAL"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_186",
+   "standardname": "186 - ARGANDA DEL REY"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_185",
+   "standardname": "185 - LA POVEDA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_184",
+   "standardname": "184 - RIVAS VACIAMADRID"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_183",
+   "standardname": "183 - RIVAS URBANIZACIONES"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_182",
+   "standardname": "182 - PUERTA DE ARGANDA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_181",
+   "standardname": "181 - SAN CIPRIANO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_180",
+   "standardname": "180 - VICALVARO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_18",
+   "standardname": "18 - PACIFICO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_179",
+   "standardname": "179 - VALDEBERNARDO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_178",
+   "standardname": "178 - PAVONES"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_177",
+   "standardname": "177 - ARTILLEROS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_176",
+   "standardname": "176 - VINATEROS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_175",
+   "standardname": "175 - ESTRELLA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_174",
+   "standardname": "174 - SAINZ DE BARANDA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_173",
+   "standardname": "173 - IBIZA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_172",
+   "standardname": "172 - PRINCIPE DE VERGARA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_171",
+   "standardname": "171 - NUÑEZ DE BALBOA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_170",
+   "standardname": "170 - AVENIDA DE AMERICA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_17",
+   "standardname": "17 - MENENDEZ PELAYO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_169",
+   "standardname": "169 - CRUZ DEL RAYO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_168",
+   "standardname": "168 - CONCHA ESPINA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_167",
+   "standardname": "167 - COLOMBIA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_166",
+   "standardname": "166 - PIO XII"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_165",
+   "standardname": "165 - DUQUE DE PASTRANA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_164",
+   "standardname": "164 - PLAZA DE CASTILLA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_163",
+   "standardname": "163 - VENTILLA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_162",
+   "standardname": "162 - BARRIO DEL PILAR"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_161",
+   "standardname": "161 - HERRERA ORIA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_160",
+   "standardname": "160 - BARAJAS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_16",
+   "standardname": "16 - ATOCHA RENFE"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_159",
+   "standardname": "159 - AEROPUERTO T1 T2 T3"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_158",
+   "standardname": "158 - CAMPO DE LAS NACIONES"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_157",
+   "standardname": "157 - MAR DE CRISTAL"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_156",
+   "standardname": "156 - COLOMBIA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_155",
+   "standardname": "155 - NUEVOS MINISTERIOS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_154",
+   "standardname": "154 - PITIS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_152",
+   "standardname": "152 - LACOMA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_151",
+   "standardname": "151 - AVDA. DE LA ILUSTRACION"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_150",
+   "standardname": "150 - PEÑAGRANDE"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_15",
+   "standardname": "15 - ATOCHA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_149",
+   "standardname": "149 - ANTONIO MACHADO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_148",
+   "standardname": "148 - VALDEZARZA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_147",
+   "standardname": "147 - FRANCOS RODRIGUEZ"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_146",
+   "standardname": "146 - GUZMAN EL BUENO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_145",
+   "standardname": "145 - ISLAS FILIPINAS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_144",
+   "standardname": "144 - CANAL"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_143",
+   "standardname": "143 - ALONSO CANO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_142",
+   "standardname": "142 - GREGORIO MARAÑON"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_141",
+   "standardname": "141 - AVENIDA DE AMERICA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_140",
+   "standardname": "140 - CARTAGENA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_14",
+   "standardname": "14 - ANTON MARTIN"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_139",
+   "standardname": "139 - PARQUE DE LAS AVENIDAS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_138",
+   "standardname": "138 - BARRIO DE LA CONCEPCION"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_137",
+   "standardname": "137 - PUEBLO NUEVO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_136",
+   "standardname": "136 - ASCAO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_135",
+   "standardname": "135 - GARCIA NOBLEJAS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_134",
+   "standardname": "134 - SIMANCAS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_133",
+   "standardname": "133 - SAN BLAS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_132",
+   "standardname": "132 - LAS MUSAS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_130",
+   "standardname": "130 - LUCERO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_13",
+   "standardname": "13 - TIRSO DE MOLINA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_129",
+   "standardname": "129 - ALTO DE EXTREMADURA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_128",
+   "standardname": "128 - PUERTA DEL ANGEL"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_127",
+   "standardname": "127 - PRINCIPE PIO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_126",
+   "standardname": "126 - ARGÜELLES"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_125",
+   "standardname": "125 - MONCLOA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_124",
+   "standardname": "124 - CIUDAD UNIVERSITARIA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_123",
+   "standardname": "123 - METROPOLITANO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_122",
+   "standardname": "122 - GUZMAN EL BUENO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_121",
+   "standardname": "121 - CUATRO CAMINOS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_120",
+   "standardname": "120 - NUEVOS MINISTERIOS"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_12",
+   "standardname": "12 - SOL"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_119",
+   "standardname": "119 - REPUBLICA ARGENTINA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_118",
+   "standardname": "118 - AVENIDA DE AMERICA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_117",
+   "standardname": "117 - DIEGO DE LEON"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_116",
+   "standardname": "116 - MANUEL BECERRA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_115",
+   "standardname": "115 - O'DONNELL"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_114",
+   "standardname": "114 - SAINZ DE BARANDA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_113",
+   "standardname": "113 - CONDE DE CASAL"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_112",
+   "standardname": "112 - PACIFICO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_111",
+   "standardname": "111 - MENDEZ ALVARO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_110",
+   "standardname": "110 - LEGAZPI"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_11",
+   "standardname": "11 - GRAN VIA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_109",
+   "standardname": "109 - USERA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_108",
+   "standardname": "108 - PLAZA ELIPTICA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_107",
+   "standardname": "107 - OPAÑEL"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_106",
+   "standardname": "106 - OPORTO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_105",
+   "standardname": "105 - CARPETANA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_104",
+   "standardname": "104 - LAGUNA"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_103",
+   "standardname": "103 - CASA DE CAMPO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_102",
+   "standardname": "102 - CAMPAMENTO"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_101",
+   "standardname": "101 - EMPALME"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_100",
+   "standardname": "100 - ALUCHE"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_10",
+   "standardname": "10 - TRIBUNAL"
+ },
+ {
+   "@id": "http://madrid.linkedconnections.org/crtm/stops/par_4_1",
+   "standardname": "1 - PLAZA DE CASTILLA"
+ }
+]

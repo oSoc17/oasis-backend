@@ -167,7 +167,11 @@ const fillDatabase = () => {
         5 - train */
     
     importJson("data/sncb.json", "station", "train", "sncb");
-    importJson("data/crtm001.json", null, "bus", "crtm");
+    importJson("data/crtm/emtStops.json", null, "emt-bus", "crtm");
+    importJson("data/crtm/metroStops.json", null, "metro", "crtm");
+    importJson("data/crtm/trainStops.json", null, "train", "crtm");
+    importJson("data/crtm/busses.json", null, "bus", "crtm");
+    importJson("data/crtm/urbanStops.json", null, "bus", "crtm");
 }
 
 /**
