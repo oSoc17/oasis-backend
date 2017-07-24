@@ -73,10 +73,9 @@ const importJson = (file, key, type, company) => {
         for (let station of stations) {
             if (!station['standardname'] && station['name']) {
                 station['standardname'] = station['name'];
-            } else {
-                if (!station['name'] && station['standardname']) {
-                    station['name'] = station['standardname'];
-                }
+            }
+            if (!station['name'] && station['standardname']) {
+                station['name'] = station['standardname'];
             }
             if (station['@id'] && station['standardname'] && station['name']) {
                 station['standardname'] = capitalize(station['standardname']);
