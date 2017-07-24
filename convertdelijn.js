@@ -4,7 +4,7 @@ let result = [];
 
 for (let stop of lijndata) {
     const newstop = {
-        "@id": "http://belgium.linkedconnections.org/delijn/stops/" + stop["stop_code"],
+        "@id": `http://belgium.linkedconnections.org/delijn/stops/${stop['stop_code']}`,
         "name": stop["stop_name"]
     };
     result.push(newstop);
