@@ -43,9 +43,9 @@ const addStation = (name, standardname, uri, type, company) => {
  * @param {*} str the string that has to be capitalized
  */
 const capitalize = (str) => {
-    let splitStr = str.toLowerCase().split(' ');
+    let splitStr = str.toLowerCase().split(/ |-|,|\//);
     for (var i = 0; i < splitStr.length; i++) {
-        splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);     
+        splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
     }
     return splitStr.join(' '); 
 };
