@@ -57,7 +57,7 @@ const capitalize = (str) => {
  * @param {*} type the type of transport inside the json
  * @param {*} company the company offering the transport
  */
-const importJson = (file, key, type, company) => {
+const importJson = (file, key, type, company, capitalizeName) => {
     // TODO: support multiple types in one file
     fs.readFile(file, (err, data) => {
         if (err) {
@@ -78,8 +78,10 @@ const importJson = (file, key, type, company) => {
                 station['name'] = station['standardname'];
             }
             if (station['@id'] && station['standardname'] && station['name']) {
-                station['standardname'] = capitalize(station['standardname']);
-                station['name'] = capitalize(station['name']);
+                if (capitalizeName) {
+                    station['standardname'] = capitalize(station['standardname']);
+                    station['name'] = capitalize(station['name']);
+                }
                 addStation(station['name'], station['standardname'], station['@id'], type, company);
                 // console.log("Station has been added!");
             }
@@ -166,11 +168,11 @@ const fillDatabase = () => {
         5 - train */
     
     importJson("data/sncb.json", "station", "train", "sncb");
-    importJson("data/crtm/emtStops.json", null, "emt-bus", "crtm");
-    importJson("data/crtm/metroStops.json", null, "metro", "crtm");
-    importJson("data/crtm/trainStops.json", null, "train", "crtm");
-    importJson("data/crtm/busses.json", null, "bus", "crtm");
-    importJson("data/crtm/urbanStops.json", null, "bus", "crtm");
+    importJson("data/crtm/emtStops.json", null, "emt-bus", "crtm", true);
+    importJson("data/crtm/metroStops.json", null, "metro", "crtm", true);
+    importJson("data/crtm/trainStops.json", null, "train", "crtm", true);
+    importJson("data/crtm/busses.json", null, "bus", "crtm", true);
+    importJson("data/crtm/urbanStops.json", null, "bus", "crtm", true);
     importJson("data/delijn.json", null, "bus", "delijn");
 }
 

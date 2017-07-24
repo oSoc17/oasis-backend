@@ -13,7 +13,7 @@ const port = process.env.PORT || config.port;
  * Logs that the server started and starts up all listeners, services and db fillers
  */
 const serverStarted = () => {
-    console.log("Server is up and running!")
+    console.log(`Server is up and running on port ${port}!`)
     app.get('/', function (req, res) {
         responseHandler.sendDocumentation(req, res);
     });
