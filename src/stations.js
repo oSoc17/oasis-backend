@@ -90,8 +90,8 @@ const importJson = (file, key, type, company) => {
 }
 
 /**
- * Returns a list of stations that contain the query
- * @param {*} query a query object {id, name, company, type}
+ * Returns a list of stations that contains the query
+ * @param {*} query a query object {id, name, company, type, page}
  */
 const getStation = (query) => {
     let sqlQuery = 'SELECT * FROM stations ';
