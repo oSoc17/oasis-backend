@@ -9,7 +9,7 @@ const config = require('../config.json');
  */
 const checkDatabase = () => {
     db.run("CREATE TABLE IF NOT EXISTS stations (id varchar(250) PRIMARY KEY, name varchar(150), " + 
-                "standardname varchar(150), company varchar(250), type varchar(250));");
+                "standardname varchar(150), company varchar(250), type varchar(250), parent varchar(250));");
 };
 
 /**
@@ -28,14 +28,17 @@ const removeQuote = (string) => {
  * @param {*} type the type of transport
  * @param {*} company the company owning the station
  */
-const addStation = (name, standardname, uri, type, company) => {
+const addStation = (name, standardname, uri, type, company, parent) => {
     name = removeQuote(name);
     standardname = removeQuote(standardname);
     uri = removeQuote(uri);
     type = removeQuote(type);
     company = removeQuote(company);
-    db.run(`INSERT OR IGNORE INTO stations (name, standardname, id, company, type) VALUES('${ name }', ` +
-                `'${ standardname }', '${ uri }', '${ company }', '${ type }');`);
+    if (parent) {
+        console.log(parent);
+    }
+    db.run(`INSERT OR IGNORE INTO stations (name, standardname, id, company, type, parent) VALUES('${ name }', ` +
+                `'${ standardname }', '${ uri }', '${ company }', '${ type }', '${ parent }');`);
 };
 
 /**
@@ -82,7 +85,8 @@ const importJson = (file, key, type, company, capitalizeName) => {
                     station['standardname'] = capitalize(station['standardname']);
                     station['name'] = capitalize(station['name']);
                 }
-                addStation(station['name'], station['standardname'], station['@id'], type, company);
+                let parent = station['parent'] ? station['parent'] : null;
+                addStation(station['name'], station['standardname'], station['@id'], type, company, parent);
                 // console.log("Station has been added!");
             }
         }
