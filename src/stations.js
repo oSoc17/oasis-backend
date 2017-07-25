@@ -8,8 +8,8 @@ const config = require('../config.json');
  * Checks if the table exists and adds in case it doesn't
  */
 const checkDatabase = () => {
-    db.run("CREATE TABLE IF NOT EXISTS stations (id varchar(250) PRIMARY KEY, name varchar(150), " + 
-                "standardname varchar(150), company varchar(250), type varchar(250), parent varchar(250));");
+    return db.run("CREATE TABLE IF NOT EXISTS stations (id varchar(250) PRIMARY KEY, name varchar(150), " +
+        "standardname varchar(150), company varchar(250), type varchar(250), parent varchar(250));");
 };
 
 /**
@@ -35,10 +35,12 @@ const addStation = (name, standardname, uri, type, company, parent) => {
     type = removeQuote(type);
     company = removeQuote(company);
     if (parent) {
-        console.log(parent);
+        db.run(`INSERT OR IGNORE INTO stations (name, standardname, id, company, type, parent) VALUES('${name}', ` +
+            `'${standardname}', '${uri}', '${company}', '${type}', '${parent}');`);
+    } else {
+        db.run(`INSERT OR IGNORE INTO stations (name, standardname, id, company, type, parent) VALUES('${name}', ` +
+            `'${standardname}', '${uri}', '${company}', '${type}', NULL);`);
     }
-    db.run(`INSERT OR IGNORE INTO stations (name, standardname, id, company, type, parent) VALUES('${ name }', ` +
-                `'${ standardname }', '${ uri }', '${ company }', '${ type }', '${ parent }');`);
 };
 
 /**
@@ -48,9 +50,9 @@ const addStation = (name, standardname, uri, type, company, parent) => {
 const capitalize = (str) => {
     let splitStr = str.toLowerCase().split(' ');
     for (var i = 0; i < splitStr.length; i++) {
-        splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);     
+        splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
     }
-    return splitStr.join(' '); 
+    return splitStr.join(' ');
 };
 
 /**
@@ -87,7 +89,6 @@ const importJson = (file, key, type, company, capitalizeName) => {
                 }
                 let parent = station['parent'] ? station['parent'] : null;
                 addStation(station['name'], station['standardname'], station['@id'], type, company, parent);
-                // console.log("Station has been added!");
             }
         }
         console.log("Stations in dataset", file, ":", stations.length);
@@ -103,10 +104,11 @@ const getStation = (query) => {
     let parameters = [];
     let nextPage = `${config.domain}/station`;
     let response = {};
-    if (query.id || query.name || query.company || query.type) {
+    if (query.id || query.name || query.company || query.type || query.children) {
         sqlQuery = 'SELECT * FROM stations WHERE ';
     }
     if (query.id) {
+        sqlQuery += parameters.length > 0 ? ' AND' : "";
         nextPage += `?id=${query.id}`;
         sqlQuery += ' id= ?';
         parameters.push(`${query.id}`);
@@ -115,7 +117,7 @@ const getStation = (query) => {
         nextPage += parameters.length > 0 ? '&' : '?';
         nextPage += `q=${query.name}`;
         sqlQuery += parameters.length > 0 ? ' AND' : "";
-        sqlQuery += ' name LIKE ? OR standardname LIKE ?';
+        sqlQuery += ' (name LIKE ? OR standardname LIKE ?)';
         parameters.push(`%${query.name}%`);
         parameters.push(`%${query.name}%`);
     }
@@ -133,6 +135,13 @@ const getStation = (query) => {
         sqlQuery += ' type= ?';
         parameters.push(`${query.type}`);
     }
+    if (query.children === "false") {
+        console.log("only parents requested")
+        nextPage += parameters.length > 0 ? '&' : '?';
+        nextPage += `children=${query.children}`;
+        sqlQuery += parameters.length > 0 ? ' AND' : "";
+        sqlQuery += " parent IS NULL";
+    }
     sqlQuery += ' LIMIT 25';
     if (query.page && !isNaN(query.page)) {
         query.page = parseInt(query.page)
@@ -141,21 +150,22 @@ const getStation = (query) => {
         query.page = 0;
     }
     return new Promise((resolve, reject) => {
+        console.log(sqlQuery);
         db.all(sqlQuery, parameters)
-        .then((row) => {
-            // console.log(row);
-            if (row.length >= 25) {
-                nextPage += parameters.length > 0 ? '&' : '?';
-                nextPage += `p=${(query.page + 1)}`;
-                response.nextPage = nextPage;
-            }
-            response.stations = row;
-            resolve(response);
-        })
-        .catch((e) => {
-            // console.log(e);
-            reject(e);
-        });
+            .then((row) => {
+                // console.log(row);
+                if (row.length >= 25) {
+                    nextPage += parameters.length > 0 ? '&' : '?';
+                    nextPage += `p=${(query.page + 1)}`;
+                    response.nextPage = nextPage;
+                }
+                response.stations = row;
+                resolve(response);
+            })
+            .catch((e) => {
+                // console.log(e);
+                reject(e);
+            });
     });
 }
 
@@ -170,7 +180,7 @@ const fillDatabase = () => {
         4 - metro
         10 - tram
         5 - train */
-    
+
     importJson("data/sncb.json", "station", "train", "sncb");
     importJson("data/crtm/emtStops.json", null, "emt-bus", "crtm", true);
     importJson("data/crtm/metroStops.json", null, "metro", "crtm", true);
@@ -185,41 +195,46 @@ const fillDatabase = () => {
  * @param {*} app the express app instance
  */
 const registerListeners = (app) => {
-    checkDatabase();
-    fillDatabase();
-    app.get('/station', function (req, res) {
-        if (req.query) {
-            res.setHeader('Content-Type', 'application/json');
-            res.header("Access-Control-Allow-Origin", "*");
-            let searchQuery = {};
-            let valueSet = false;
-            if (req.query.q) {
-                searchQuery["name"] = `${req.query.q}`;
-                valueSet = true;
+    checkDatabase().then(() => {
+        fillDatabase();
+        app.get('/station', function (req, res) {
+            if (req.query) {
+                res.setHeader('Content-Type', 'application/json');
+                res.header("Access-Control-Allow-Origin", "*");
+                let searchQuery = {};
+                let valueSet = false;
+                if (req.query.q) {
+                    searchQuery["name"] = `${req.query.q}`;
+                    valueSet = true;
+                }
+                if (req.query.id) {
+                    searchQuery["id"] = `${req.query.id}`;
+                    valueSet = true;
+                }
+                if (req.query.company) {
+                    searchQuery["company"] = `${req.query.company}`;
+                    valueSet = true;
+                }
+                if (req.query.type) {
+                    searchQuery["type"] = `${req.query.type}`;
+                    valueSet = true;
+                }
+                if (req.query.children) {
+                    searchQuery["children"] = `${req.query.children}`;
+                    valueSet = true;
+                }
+                if (req.query.p) {
+                    searchQuery["page"] = `${req.query.p}`;
+                    valueSet = true;
+                }
+                return getStation(searchQuery)
+                    .then((data) => {
+                        res.send(JSON.stringify(data));
+                    })
+                    .catch(e => JSON.stringify(responseHandler.generateError("No data found.")));
             }
-            if (req.query.id) {
-                searchQuery["id"] = `${req.query.id}`;
-                valueSet = true;
-            }
-            if (req.query.company) {
-                searchQuery["company"] = `${req.query.company}`;
-                valueSet = true;
-            }
-            if (req.query.type) {
-                searchQuery["type"] = `${req.query.type}`;
-                valueSet = true;
-            }
-            if (req.query.p) {
-                searchQuery["page"] = `${req.query.p}`;
-                valueSet = true;
-            }
-            return getStation(searchQuery)
-            .then((data) => {
-                res.send(JSON.stringify(data));
-            })
-            .catch(e => JSON.stringify(responseHandler.generateError("No data found.")));
-        }
-    });
+        });
+    }).catch(e => console.log(e));
 }
 
 module.exports.registerListeners = registerListeners;
