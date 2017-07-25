@@ -21,7 +21,7 @@ let uriTree = {};
 
         if (parentName !== name) {
             const parent = {
-                "@id": uri,
+                "@id": parentUri,
                 "name": parentName
             };
 
