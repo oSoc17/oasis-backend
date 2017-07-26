@@ -182,7 +182,7 @@ const fillDatabase = () => {
     importJson("data/crtm/trainStops.json", null, "train", "crtm", true);
     importJson("data/crtm/busses.json", null, "bus", "crtm", true);
     importJson("data/crtm/urbanStops.json", null, "bus", "crtm", true);
-    importJson("data/delijn.json", null, "bus", "delijn");
+    importJson("data/delijn.json", null, "bus", "delijn", true);
 }
 
 /**
