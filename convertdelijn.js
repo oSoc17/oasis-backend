@@ -6,7 +6,7 @@ let uriTree = {};
 
 (function() {
     for (let stop of lijndata) {
-        let uri = `http://belgium.linkedconnections.org/delijn/stops/${stop['stop_code']}`;
+        let uri = `http://belgium.linkedconnections.org/delijn/stops/${stop['stop_id']}`;
         let name = stop["stop_name"];
         let parentName = name.replace(/(\s+)?[-\s]?(\s+)?(?:P|p)(?:E|e)(?:R|r)(?:R|r)(?:O|o)(?:N|n)(\s+)?.+/g, "");
         let parentUri = uri + "_parent";
