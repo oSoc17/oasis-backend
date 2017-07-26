@@ -34,13 +34,9 @@ const addStation = (name, standardname, uri, type, company, parent) => {
     uri = removeQuote(uri);
     type = removeQuote(type);
     company = removeQuote(company);
-    if (parent) {
-        db.run(`INSERT OR IGNORE INTO stations (name, standardname, id, company, type, parent) VALUES('${name}', ` +
-            `'${standardname}', '${uri}', '${company}', '${type}', '${parent}');`);
-    } else {
-        db.run(`INSERT OR IGNORE INTO stations (name, standardname, id, company, type, parent) VALUES('${name}', ` +
-            `'${standardname}', '${uri}', '${company}', '${type}', NULL);`);
-    }
+    parent = parent ? `'${removeQuote(parent)}'` : "NULL";
+    db.run(`INSERT OR IGNORE INTO stations (name, standardname, id, company, type, parent) VALUES('${name}', ` +
+        `'${standardname}', '${uri}', '${company}', '${type}', ${parent});`);
 };
 
 /**
@@ -135,12 +131,11 @@ const getStation = (query) => {
         sqlQuery += ' type= ?';
         parameters.push(`${query.type}`);
     }
-    if (query.children === "false") {
-        console.log("only parents requested")
+    if (query.children !== undefined) {
         nextPage += parameters.length > 0 ? '&' : '?';
-        nextPage += `children=${query.children}`;
+        nextPage += `children=query.children`;
         sqlQuery += parameters.length > 0 ? ' AND' : "";
-        sqlQuery += " parent IS NULL";
+        sqlQuery += query.children === "false" ? " parent IS NULL" : " parent IS NOT NULL";
     }
     sqlQuery += ' LIMIT 25';
     if (query.page && !isNaN(query.page)) {
