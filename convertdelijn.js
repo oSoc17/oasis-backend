@@ -22,7 +22,9 @@ let nameCount = {};
 
         const child = {
             "@id": uri,
-            "name": stop["stop_name"]
+            "name": stop["stop_name"],
+            "latitude": "" + stop["stop_lat"],
+            "longitude": "" + stop["stop_lon"]
         };
 
         if (parentStations[parentName]) {
@@ -40,7 +42,9 @@ let nameCount = {};
         if (parentName.toLowerCase() !== name.toLowerCase()) {
             const parent = {
                 "@id": parentUri,
-                "name": parentName
+                "name": parentName,
+                "latitude": "" + stop["stop_lat"],
+                "longitude": "" + stop["stop_lon"]
             };
 
             console.log(name);

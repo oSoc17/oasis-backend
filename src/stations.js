@@ -9,7 +9,7 @@ const config = require('../config.json');
  */
 const checkDatabase = () => {
     return db.run("CREATE TABLE IF NOT EXISTS stations (id varchar(250) PRIMARY KEY, name varchar(150), " +
-        "standardname varchar(150), company varchar(250), type varchar(250), parent varchar(250));");
+        "standardname varchar(150), company varchar(250), type varchar(250), parent varchar(250), longitude varchar(250), latitude varchar(250));");
 };
 
 /**
@@ -28,15 +28,17 @@ const removeQuote = (string) => {
  * @param {*} type the type of transport
  * @param {*} company the company owning the station
  */
-const addStation = (name, standardname, uri, type, company, parent) => {
+const addStation = (name, standardname, uri, type, company, parent, x, y) => {
     name = removeQuote(name);
     standardname = removeQuote(standardname);
     uri = removeQuote(uri);
     type = removeQuote(type);
     company = removeQuote(company);
     parent = parent ? `'${removeQuote(parent)}'` : "NULL";
-    db.run(`INSERT OR IGNORE INTO stations (name, standardname, id, company, type, parent) VALUES('${name}', ` +
-        `'${standardname}', '${uri}', '${company}', '${type}', ${parent});`);
+    let longitude = x ? `'${removeQuote(x)}'` : "NULL";
+    let latitude = y ? `'${removeQuote(y)}'` : "NULL";
+    db.run(`INSERT OR IGNORE INTO stations (name, standardname, id, company, type, parent, longitude, latitude) VALUES('${name}', ` +
+        `'${standardname}', '${uri}', '${company}', '${type}', ${parent}, ${longitude}, ${latitude});`);
 };
 
 /**
@@ -84,7 +86,9 @@ const importJson = (file, key, type, company, capitalizeName) => {
                     station['name'] = capitalize(station['name']);
                 }
                 let parent = station['parent'] ? station['parent'] : null;
-                addStation(station['name'], station['standardname'], station['@id'], type, company, parent);
+                let longitude = station['longitude'] ? station['longitude'] : null;
+                let latitude = station['latitude'] ? station['latitude'] : null;
+                addStation(station['name'], station['standardname'], station['@id'], type, company, parent, longitude, latitude);
             }
         }
         console.log("Stations in dataset", file, ":", stations.length);
